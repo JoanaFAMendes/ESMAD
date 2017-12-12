@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="1000" height="400">
+        <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+        <defs>
+            <radialGradient id="gradient" cy="0.46875" cx="0.464844" spreadMethod="pad" id="svg_7">
+                <stop offset="0" stop-opacity="0.996094" stop-color="#C94D24" /><!--"#C94D24" cor do ipp-->
+                <stop offset="1" stop-opacity="0.996094" stop-color="#BCBEC0"/>
+            </radialGradient>
+        </defs>
+        <g>
+            <title>background</title>
+            <rect fill="#fff" id="canvas_background" height="402" width="1002" y="-1" x="-1"/>
+            <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+            </g>
+        </g>
+        <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+                <animate attributeType="XML"
+                        attributeName="x"
+                        from="0" to="150%"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+            </rect>
+            <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
+                <animate attributeType="XML"
+                        attributeName="x"
+                        from="-150%" to="0"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+            </rect>
+        </pattern>
+        <g>
+            <title>Layer 1</title>
+            <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="200" id="svg_5" y="255" x="108.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="url(#pattern)">ESMAD</text>
+        </g>
+    </svg>
+</body>
+</html>
